@@ -1,4 +1,4 @@
-# boraCodar 👨🏽‍💻
+# BoraCodar 👨🏽‍💻
 
 Projetos do #boraCodar da Rocketseat
 
