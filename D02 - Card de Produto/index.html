@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>D02 - Card de Produto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="product_image">
+                <img id="productImage" src="./assets/img/sofa_boraCodar.png" alt="">
+                <button id="view360" onclick="ChangeImage()">
+                    <img src="./assets/icons/view360.svg" alt="">
+                </button>
+            </div>
+            <div class="product_info">
+                <div class="product_description">
+                    <span id="productCode"></span>
+                    <span id="productName"></span>
+                    <span id="productPrice"></span>
+                </div>
+                <button class="addToCart" onclick="AddProductToCart()">adicionar à cesta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
