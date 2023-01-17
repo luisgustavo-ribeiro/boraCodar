@@ -34,8 +34,10 @@ body {
 }
 
 .product_image {
+    display: flex;
 	position: relative;
-	width: 450px;
+    align-items: center;
+    max-width: 450px;
 	height: 224px;
 }
 
@@ -51,13 +53,13 @@ body {
 	background: transparent;
 	border: none;
 	display: flex;
-    transition: 100ms ease-in-out;
-    cursor: pointer;
+	transition: 100ms ease-in-out;
+	cursor: pointer;
 }
 
 #view360:hover {
-    background-color: rgba(0, 0, 0, 0.03);
-    transition: 100ms ease-in-out;
+	background-color: rgba(0, 0, 0, 0.03);
+	transition: 100ms ease-in-out;
 }
 
 #view360 img {
@@ -66,8 +68,8 @@ body {
 
 .product_info {
 	display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
+	flex-direction: column;
+	gap: 1.4rem;
 }
 
 .product_description {
@@ -78,23 +80,22 @@ body {
 }
 
 #productCode {
-    font-weight: 300;
-    font-size: 0.8rem;
-    text-transform: uppercase;
+	font-weight: 300;
+	font-size: 0.8rem;
+	text-transform: uppercase;
 }
 
 #productName {
-    font-family: 'Crimson Pro', serif;
-    font-size: 2rem;
-    font-weight: 600;
+	font-family: 'Crimson Pro', serif;
+	font-size: 2rem;
+	font-weight: 600;
 }
 
 #productPrice {
-    opacity: 0.67;
-    font-size: 1rem;
-    text-transform: uppercase;
+	opacity: 0.67;
+	font-size: 1rem;
+	text-transform: uppercase;
 }
-
 
 .addToCart {
 	border: 1px solid #271a45;
@@ -102,12 +103,23 @@ body {
 	text-transform: uppercase;
 	border-radius: 10rem;
 	padding: 1rem 2rem;
-    transition: 100ms ease-in-out all;
+	transition: 100ms ease-in-out all;
 	cursor: pointer;
 }
 
 .addToCart:hover {
-    color: #fafafa;
-    background-color: #271a45;
-    transition: 100ms ease-in-out all;
+	color: #fafafa;
+	background-color: #271a45;
+	transition: 100ms ease-in-out all;
+}
+
+@media screen and (max-width: 875px) {
+	.card {
+		padding: 2rem;
+		flex-flow: column nowrap;
+	}
+
+	.product_info {
+		width: 100%;
+	}
 }
